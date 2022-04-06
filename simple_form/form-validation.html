@@ -7,6 +7,7 @@
     <title>Form Validation</title>
 </head>
 <body>
+
     <!--Min-Max Form Validation-->
         <form action="#" method="get">
             <div>
@@ -16,4 +17,24 @@
             <button type="submit">Tweet</button>
         </form>
         <!---Number Range validations-->
+        <form action="#" method="get">
+         <div>
+             <label for="quantity">Quantity</label>
+         </div>   
+         <input type="number" id="qunatity"  name="quantity" min="1" max="5"value="0"> 
+         <div>
+             <button type="submit">Place Order</button>
+         </div>
+        </form>
+
+        <!--Pattern Validation-->
+        <form action="#" method="get">
+            <div>
+                <label for="zip_code">Postal/Zip Code:</label>
+            </div>
+            <input type="text" id="zip_code" name="zip_code" pattern="(\d{5}([\-]\d{4})?)" required>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+            </form>
 </html>
